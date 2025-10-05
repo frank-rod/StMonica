@@ -74,6 +74,16 @@ h3 {
     color: var(--primary-color);
 }
 
+.logo-image {
+    height: 45px;
+    width: auto;
+}
+
+.logo-image-footer {
+    height: 50px;
+    width: auto;
+}
+
 .logo-icon {
     font-size: 2rem;
     color: var(--secondary-color);
@@ -170,21 +180,21 @@ h3 {
 
 .hero-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 80px;
     align-items: center;
     position: relative;
     z-index: 1;
 }
 
 .hero-title {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    line-height: 1.1;
+    font-size: 5.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1;
+    font-weight: 700;
 }
 
 .title-main {
-    display: block;
     color: var(--white);
 }
 
@@ -213,6 +223,61 @@ h3 {
     font-weight: 600;
 }
 
+/* Hero Stats Container - Static Design */
+.hero-stats-container {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 24px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.hero-stat-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.hero-stat-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.stat-icon {
+    flex-shrink: 0;
+}
+
+.stat-icon img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.stat-content {
+    flex: 1;
+}
+
+.stat-title {
+    font-size: 1rem;
+    color: var(--text-dark);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.stat-value {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
 .hero-cta {
     margin-top: 2.5rem;
     display: flex;
@@ -229,71 +294,8 @@ h3 {
 
 .hero-visual {
     position: relative;
-    height: 500px;
-}
-
-.floating-card {
-    position: absolute;
-    background: var(--white);
-    padding: 1.5rem;
-    border-radius: 16px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     display: flex;
-    gap: 1rem;
     align-items: center;
-    animation: float 5s ease-in-out infinite;
-}
-
-.floating-card.card-1 {
-    top: 10%;
-    right: 5%;
-    animation-delay: 0s;
-    z-index: 3;
-}
-
-.floating-card.card-2 {
-    top: 40%;
-    right: 20%;
-    animation-delay: 0.5s;
-    z-index: 1;
-}
-
-.floating-card.card-3 {
-    bottom: 10%;
-    right: 35%;
-    animation-delay: 1s;
-    z-index: 2;
-}
-
-.card-icon {
-    font-size: 2.5rem;
-}
-
-.card-icon img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-}
-
-.card-title {
-    font-size: 0.9rem;
-    color: var(--text-light);
-    font-weight: 500;
-}
-
-.card-value {
-    font-size: 1.2rem;
-    color: var(--primary-color);
-    font-weight: 700;
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
 }
 
 /* Section Headers */
@@ -400,8 +402,17 @@ h3 {
 }
 
 .service-icon {
-    font-size: 3rem;
     margin-bottom: 1.5rem;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.service-icon img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
 }
 
 .service-card h3 {
@@ -434,10 +445,11 @@ h3 {
 }
 
 .step-number {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: var(--secondary-color);
     margin-bottom: 1rem;
     font-weight: 700;
+    font-family: 'Playfair Display', serif;
 }
 
 .work-step h3 {
@@ -492,15 +504,14 @@ h3 {
 }
 
 .target-requirements {
-    background: var(--bg-light);
-    padding: 2rem;
-    border-radius: 16px;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .target-requirements h3 {
     color: var(--primary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .target-requirements ul {
@@ -528,6 +539,7 @@ h3 {
     color: var(--white);
     border-radius: 12px;
     line-height: 1.7;
+    margin-top: 2rem;
 }
 
 .target-note strong {
@@ -563,11 +575,15 @@ h3 {
     background: var(--primary-color);
     color: var(--white);
     transform: scale(1.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.flow-icon {
-    font-size: 2.5rem;
-    margin-bottom: 0.75rem;
+.flow-logo {
+    height: 120px;
+    width: auto;
+    object-fit: contain;
 }
 
 .flow-label {
@@ -633,7 +649,17 @@ h3 {
 }
 
 .method-icon {
-    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.method-icon img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
 }
 
 .method-label {
@@ -780,11 +806,21 @@ h3 {
     }
 
     .hero-title {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
-    .hero-visual {
-        height: 400px;
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-stats-container {
+        padding: 2rem;
+        gap: 1.25rem;
+    }
+
+    .hero-stat-card {
+        padding: 1.25rem;
     }
 
     h2 {
@@ -812,6 +848,10 @@ h3 {
     .flow-item {
         max-width: 200px;
     }
+
+    .flow-logo {
+        height: 100px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -831,17 +871,30 @@ h3 {
         font-size: 1rem;
     }
 
-    .floating-card {
-        padding: 1rem;
+    .hero-title {
+        font-size: 2.5rem;
     }
 
-    .card-icon {
-        font-size: 2rem;
+    .hero-stats-container {
+        padding: 1.5rem;
     }
-    
-    .card-icon img {
-        width: 40px;
-        height: 40px;
+
+    .hero-stat-card {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .stat-icon img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .stat-title {
+        font-size: 0.9rem;
+    }
+
+    .stat-value {
+        font-size: 1.1rem;
     }
 
     .problems-grid,

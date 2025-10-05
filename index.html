@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santa Mónica Analítica - Tus números, hoy</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Santa Mónica</title>
+    <link rel="icon" type="image/png" href="assets/images/logos/favicon.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -13,13 +14,9 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="container nav-container">
-            <div class="logo">
-                <div class="logo-icon">✦</div>
-                <div class="logo-text">
-                    <div>SANTA MÓNICA</div>
-                    <div class="logo-subtitle">ANALÍTICA</div>
-                </div>
-            </div>
+            <a href="#" class="logo">
+                <img src="assets/images/logos/logo-header.png" alt="Santa Mónica Analítica" class="logo-image">
+            </a>
             <div class="nav-links">
                 <a href="#servicios">Servicios</a>
                 <a href="#como-trabajamos">Cómo trabajamos</a>
@@ -33,12 +30,10 @@
         <div class="container hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    <span class="title-main">Tus números,</span>
-                    <span class="title-accent">hoy.</span>
+                    <span class="title-main">Tus números, <span class="title-accent">hoy.</span></span>
                 </h1>
                 <p class="hero-subtitle">Lidera con propósito, decide con datos</p>
                 <p class="hero-description">
-                    Transformamos tu información en <strong>decisiones estratégicas</strong>. 
                     Automatizamos procesos, creamos dashboards ejecutivos y te damos 
                     visibilidad en tiempo real de tu negocio.
                 </p>
@@ -48,25 +43,27 @@
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="floating-card card-1">
-                    <div class="card-icon"><img src="Dashboards en tiempo real.png" alt="Dashboards"></div>
-                    <div class="card-text">
-                        <div class="card-title">Dashboards en tiempo real</div>
-                        <div class="card-value">↑ 70% eficiencia</div>
+                <div class="hero-stats-container">
+                    <div class="hero-stat-card">
+                        <div class="stat-icon"><img src="assets/images/hero/dashboards.png" alt="Dashboards"></div>
+                        <div class="stat-content">
+                            <div class="stat-title">Dashboards en tiempo real</div>
+                            <div class="stat-value">↑ 70% eficiencia</div>
+                        </div>
                     </div>
-                </div>
-                <div class="floating-card card-2">
-                    <div class="card-icon"><img src="Automatización.png" alt="Automatización"></div>
-                    <div class="card-text">
-                        <div class="card-title">Automatización</div>
-                        <div class="card-value">-70% trabajo manual</div>
+                    <div class="hero-stat-card">
+                        <div class="stat-icon"><img src="assets/images/hero/automatizacion.png" alt="Automatización"></div>
+                        <div class="stat-content">
+                            <div class="stat-title">Automatización</div>
+                            <div class="stat-value">-70% trabajo manual</div>
+                        </div>
                     </div>
-                </div>
-                <div class="floating-card card-3">
-                    <div class="card-icon"><img src="KPIs certificados.png" alt="KPIs"></div>
-                    <div class="card-text">
-                        <div class="card-title">KPIs certificados</div>
-                        <div class="card-value">Una sola verdad</div>
+                    <div class="hero-stat-card">
+                        <div class="stat-icon"><img src="assets/images/hero/kpis.png" alt="KPIs"></div>
+                        <div class="stat-content">
+                            <div class="stat-title">KPIs certificados</div>
+                            <div class="stat-value">Una sola verdad</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,22 +114,30 @@
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">📈</div>
+                    <div class="service-icon">
+                        <img src="assets/images/services/dashboards-ejecutivos.png" alt="Dashboards Ejecutivos">
+                    </div>
                     <h3>Dashboards Ejecutivos</h3>
                     <p>Visibilidad completa de tu negocio en una sola pantalla. KPIs en tiempo real, alertas automáticas y drill-down para profundizar cuando lo necesites.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">⚙️</div>
+                    <div class="service-icon">
+                        <img src="assets/images/services/automatizacion-procesos.png" alt="Automatización de Procesos">
+                    </div>
                     <h3>Automatización de Procesos</h3>
                     <p>Elimina hasta el 70% del trabajo manual. Cierres automáticos, reportes que se generan solos y notificaciones inteligentes.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🎯</div>
+                    <div class="service-icon">
+                        <img src="assets/images/services/kpis-metricas.png" alt="KPIs y Métricas">
+                    </div>
                     <h3>KPIs y Métricas de Negocio</h3>
                     <p>Diseñamos las métricas que realmente importan. Mide a tu equipo, cumplimiento de objetivos y crece con datos.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🔄</div>
+                    <div class="service-icon">
+                        <img src="assets/images/services/integracion-crm.png" alt="Integración con ERP/CRM">
+                    </div>
                     <h3>Integración con tu ERP/CRM</h3>
                     <p>Conectamos directamente con tus sistemas existentes. No reemplazamos nada, solo extraemos el valor de lo que ya tienes.</p>
                 </div>
@@ -144,11 +149,11 @@
     <section id="como-trabajamos" class="how-we-work">
         <div class="container">
             <div class="section-header">
-                <h2>Trabajamos en equipo</h2>
+                <h2>Trabajemos en equipo</h2>
             </div>
             <div class="work-grid">
                 <div class="work-step">
-                    <div class="step-number">→</div>
+                    <div class="step-number">01</div>
                     <h3>Evaluación Inicial</h3>
                     <h4>Sin costo</h4>
                     <ul>
@@ -158,7 +163,7 @@
                     </ul>
                 </div>
                 <div class="work-step">
-                    <div class="step-number">→</div>
+                    <div class="step-number">02</div>
                     <h3>Automatización de Procesos</h3>
                     <ul>
                         <li>Entendemos el objetivo del proceso</li>
@@ -167,7 +172,7 @@
                     </ul>
                 </div>
                 <div class="work-step">
-                    <div class="step-number">→</div>
+                    <div class="step-number">03</div>
                     <h3>Dashboards de Seguimiento</h3>
                     <ul>
                         <li>Dale seguimiento diario a tu negocio</li>
@@ -177,7 +182,7 @@
                     </ul>
                 </div>
                 <div class="work-step">
-                    <div class="step-number">→</div>
+                    <div class="step-number">04</div>
                     <h3>Creación de Métricas de Negocio (KPI)</h3>
                     <ul>
                         <li>Mide a tu equipo</li>
@@ -206,29 +211,26 @@
                             <li><span class="check">✓</span> Buscas reducir trabajo manual y ganar tiempo</li>
                         </ul>
                     </div>
+                </div>
+                <div class="target-visual">
+                    <div class="data-flow">
+                        <div class="flow-item">
+                            <div class="flow-label">Tu ERP/CRM</div>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-item highlight">
+                            <img src="assets/images/logos/Vertical - Texto claro fondo transparente.png" alt="Santa Mónica Analítica" class="flow-logo">
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-item">
+                            <div class="flow-label">Decisiones<br>estratégicas</div>
+                        </div>
+                    </div>
                     <p class="target-note">
                         <strong>Nota importante:</strong> No hacemos todo el ecosistema de datos. 
                         Nos especializamos en la <em>última milla</em>: extraer, transformar y 
                         presentar tus datos de manera estratégica.
                     </p>
-                </div>
-                <div class="target-visual">
-                    <div class="data-flow">
-                        <div class="flow-item">
-                            <div class="flow-icon">💼</div>
-                            <div class="flow-label">Tu ERP/CRM</div>
-                        </div>
-                        <div class="flow-arrow">→</div>
-                        <div class="flow-item highlight">
-                            <div class="flow-icon">✦</div>
-                            <div class="flow-label">Santa Mónica<br>Analítica</div>
-                        </div>
-                        <div class="flow-arrow">→</div>
-                        <div class="flow-item">
-                            <div class="flow-icon">📊</div>
-                            <div class="flow-label">Decisiones<br>estratégicas</div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -243,24 +245,21 @@
                     <p>Agenda una evaluación inicial sin costo. Presencial o en línea.</p>
                     <div class="contact-methods">
                         <a href="mailto:hola@stmonica.mx" class="contact-method">
-                            <div class="method-icon">✉️</div>
+                            <div class="method-icon">
+                                <img src="assets/images/icons/mail.png" alt="Email">
+                            </div>
                             <div class="method-text">
                                 <div class="method-label">Email</div>
                                 <div class="method-value">hola@stmonica.mx</div>
                             </div>
                         </a>
                         <a href="https://wa.me/528156564045" target="_blank" class="contact-method">
-                            <div class="method-icon">💬</div>
+                            <div class="method-icon">
+                                <img src="assets/images/icons/whatsapp.png" alt="WhatsApp">
+                            </div>
                             <div class="method-text">
                                 <div class="method-label">WhatsApp</div>
                                 <div class="method-value">81 56 5640 045</div>
-                            </div>
-                        </a>
-                        <a href="https://stmonica.mx" target="_blank" class="contact-method">
-                            <div class="method-icon">🌐</div>
-                            <div class="method-text">
-                                <div class="method-label">Web</div>
-                                <div class="method-value">www.stmonica.mx</div>
                             </div>
                         </a>
                     </div>
@@ -288,11 +287,7 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="logo">
-                        <div class="logo-icon">✦</div>
-                        <div class="logo-text">
-                            <div>SANTA MÓNICA</div>
-                            <div class="logo-subtitle">ANALÍTICA</div>
-                        </div>
+                        <img src="assets/images/logos/logo-footer.png" alt="Santa Mónica Analítica" class="logo-image-footer">
                     </div>
                     <p class="footer-tagline">Lidera con propósito, decide con datos</p>
                 </div>
@@ -310,7 +305,6 @@
                         <ul>
                             <li><a href="mailto:hola@stmonica.mx">hola@stmonica.mx</a></li>
                             <li><a href="https://wa.me/528156564045">81 56 5640 045</a></li>
-                            <li><a href="https://stmonica.mx">www.stmonica.mx</a></li>
                         </ul>
                     </div>
                 </div>
@@ -321,7 +315,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
-
